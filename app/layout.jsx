@@ -1,12 +1,12 @@
-import './output.css'
-import Header from './header'
-import Footer from './footer'
+import '../styles/globals.css'
+import Header from '../components/header'
+import Footer from '../components/footer'
 // import Font Awesome CSS
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 // Tell Font Awesome to skip adding the CSS automatically 
 // since it's already imported above
-config.autoAddCss = false;
+// config.autoAddCss = false;
 
 export default function RootLayout({ children }) {
     return (

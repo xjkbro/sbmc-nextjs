@@ -1,6 +1,7 @@
+"use client"
 import Image from 'next/image'
 // import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import styles from '../styles/page.module.css'
 import bg from '../public/background-home.jpg'
 // Import the FontAwesomeIcon component
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,7 +29,7 @@ export default function Home() {
                     icon={faTrophy}
                     style={{ fontSize: 72, color: "white" }}
                 />
-                <span className="drop-shadow uppercase font-semibold">November 12, 2022</span>
+                <span className="font-semibold uppercase drop-shadow">November 12, 2022</span>
             </Link>
             <Link
                 href="/sign-up" 
@@ -39,7 +40,7 @@ export default function Home() {
                     icon={faPenToSquare}
                     style={{ fontSize: 72, color: "white" }}
                 />
-                <span className="drop-shadow uppercase w-48 text-center font-semibold">Sign up today to be a mentor or student</span>
+                <span className="w-48 font-semibold text-center uppercase drop-shadow">Sign up today to be a mentor or student</span>
             </Link>
             <Link
                 href="/contact-us" 
@@ -50,16 +51,16 @@ export default function Home() {
                     icon={faEnvelope}
                     style={{ fontSize: 72, color: "white" }}
                 />
-                <span className="drop-shadow uppercase w-48 text-center font-semibold">Need to get ahold of us?</span>
+                <span className="w-48 font-semibold text-center uppercase drop-shadow">Need to get ahold of us?</span>
             </Link>
         </div>
-        <div className="my-24 flex flex-col justify-center">
+        <div className="flex flex-col justify-center my-24">
             <div className="flex flex-col justify-center text-center">
                 <div className="uppercase text-[28px] font-bold">Welcome to</div>
                 <div className="text-teal-600 uppercase text-[42px] font-bold font-roboto-slab">South Bay Math Circle</div>
             </div>
-            <p className="mt-4 text-justify w-[1280px] mx-auto text-[20px]">Founded in 2016, South Bay Math Circle is a non-profit, enrichment program inspiring the next generation of future mathematicians. Our mission is to educate elementary and middle school students in mathematics not covered in the common classroom, as well as provide opportunities for older students to gain experience in community service and mentoring. We aim to enhance students' problem solving and critical thinking skills with the help of our devoted high school volunteer mentors, who will guide their mentees in approaching the next steps of their curriculum.</p>
-            <Link className="mt-8 mx-auto px-4 py-2 rounded bg-gray-900 text-white hover:bg-gray-700 transition-all" href="/about-us">Learn More</Link>
+            <p className="mt-4 text-justify w-[1280px] mx-auto text-[20px]">Founded in 2016, South Bay Math Circle is a non-profit, enrichment program inspiring the next generation of future mathematicians. Our mission is to educate elementary and middle school students in mathematics not covered in the common classroom, as well as provide opportunities for older students to gain experience in community service and mentoring. We aim to enhance students&apos; problem solving and critical thinking skills with the help of our devoted high school volunteer mentors, who will guide their mentees in approaching the next steps of their curriculum.</p>
+            <Link className="px-4 py-2 mx-auto mt-8 text-white transition-all bg-gray-900 rounded hover:bg-gray-700" href="/about-us">Learn More</Link>
         </div>
         
     </>
