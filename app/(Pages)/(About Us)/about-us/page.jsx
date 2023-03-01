@@ -9,8 +9,8 @@ export default function AboutUs() {
         </div>
       </div>
         {/*  */}
-      <div className="my-24 flex flex-col justify-center">
-        <div className="flex flex-col justify-center items-center text-center">
+      <div className="flex flex-col justify-center my-24">
+        <div className="flex flex-col items-center justify-center text-center">
           <div className="text-teal-600 uppercase text-center text-[42px] w-[720px] font-bold font-roboto-slab">
             Welcome to the <br /> South Bay Math Circle
           </div>
@@ -52,10 +52,10 @@ export default function AboutUs() {
           SBMC as a 501(c)3.
         </p>
         <p className="text-[20px] mt-4 text-justify w-[1280px] mx-auto">
-          COVID-19 attempted to blow out SBMC's glimmering spirit. We acquired
+          COVID-19 attempted to blow out SBMC&apos;s glimmering spirit. We acquired
           dozens of virtual rooms to ensure student-teacher ratios essential to
           SBMC. With a safe online media via G-suite for nonprofits, an
-          effective platform to sustain SBMC, its mentors' team developed over
+          effective platform to sustain SBMC, its mentors&apos; team developed over
           500 pages of a new online curriculum.
         </p>
       </div>
