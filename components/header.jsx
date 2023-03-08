@@ -12,22 +12,17 @@ function Header() {
             <div className="flex gap-8">
                 <Link className="flex items-center gap-2" href="/">
                     <Image src="/sun.png" width={64} height={64} alt="Picture of the author" />
-                    <div className={"text-[32px] font-black " + robotoSlab.className}>SOUTHBAYMATHCIRCLE</div>
+                    <span className={"text-[32px] font-black " + robotoSlab.className}>SOUTHBAYMATHCIRCLE</span>
                 </Link>
             </div>
             <div className="flex items-center h-8 gap-4">
                 <Link className="px-4 py-4 font-semibold uppercase hover:underline" href="/">Home</Link>
-                {/* <Link className="font-semibold uppercase " href="/events">About Us</Link>
-                <Link className="font-semibold uppercase hover:underline" href="/events">News</Link>
-                <Link className="font-semibold uppercase hover:underline" href="/events">Programs</Link>
-                <Link className="font-semibold uppercase hover:underline" href="/events">Tournament</Link>
-                <Link className="font-semibold uppercase hover:underline" href="/events">Leadership</Link> */}
                 <div className="relative group" id="AboutUs">
                     <Link className="flex flex-row items-center w-full px-4 py-4 font-semibold uppercase bg-transparent hover:underline whitespace-nowrap" href="/about-us">
                         About Us
                     </Link>
                     <div className="absolute z-10 hidden bg-grey-200 group-hover:block w-[200px]">
-                        <div className="text-white bg-white bg-gray-700 shadow-lg bg-opacity-70 ">
+                        <div className="text-white bg-white shadow-lg bg-opacity-70 ">
                             <div className="grid grid-cols-1 text-black md:grid-cols-1 ">
                                 <Link className="block p-2 hover:bg-gray-700 hover:text-white" href="/about-us">About Us</Link>
                                 <Link className="block p-2 hover:bg-gray-700 hover:text-white" href="/faq">FAQ</Link>
@@ -43,7 +38,7 @@ function Header() {
                         Programs
                     </Link>
                     <div className="absolute z-10 hidden bg-grey-200 group-hover:block w-[200px]">
-                        <div className="text-white bg-white bg-gray-700 shadow-lg bg-opacity-70 ">
+                        <div className="text-white bg-white shadow-lg bg-opacity-70 ">
                             <div className="grid grid-cols-1 text-black md:grid-cols-1">
                                 <Link className="block p-2 hover:bg-gray-700 hover:text-white" href="/programs">Programs</Link>
                                 <Link className="block p-2 hover:bg-gray-700 hover:text-white" href="/program-gallery">Gallery</Link>
@@ -56,7 +51,7 @@ function Header() {
                         Tournament
                     </Link>
                     <div className="absolute z-10 hidden bg-grey-200 group-hover:block w-[200px]">
-                        <div className="text-white bg-white bg-gray-700 shadow-lg bg-opacity-70 ">
+                        <div className="text-white bg-white shadow-lg bg-opacity-70 ">
                             <div className="grid grid-cols-1 text-black md:grid-cols-1">
                                 <Link className="block p-2 hover:bg-gray-700 hover:text-white" href="/tournament-information">Information</Link>
                                 <Link className="block p-2 hover:bg-gray-700 hover:text-white" href="/tournament-awards">Awards</Link>
@@ -70,7 +65,7 @@ function Header() {
                         Leadership
                     </Link>
                     <div className="absolute z-10 hidden bg-grey-200 group-hover:block w-[200px]">
-                        <div className="text-white bg-white bg-gray-700 shadow-lg bg-opacity-70 ">
+                        <div className="text-white bg-white shadow-lg bg-opacity-70 ">
                             <div className="grid grid-cols-1 text-black md:grid-cols-1">
                                 <Link className="block p-2 hover:bg-gray-700 hover:text-white" href="/opportunities">Opportunities</Link>
                                 <Link className="block p-2 hover:bg-gray-700 hover:text-white" href="/board-members">Board Members</Link>

@@ -15,8 +15,8 @@ export default function RootLayout({ children }) {
             <body className={"text-black bg-white " + roboto.className}>
                 <Header />
                 {children}
-            </body>
             <Footer />
+            </body>
         </html>
     )
 }
