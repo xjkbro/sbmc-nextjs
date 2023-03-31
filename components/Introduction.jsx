@@ -15,23 +15,23 @@ export default function Introduction() {
     return (
         <>
             <div className="h-[80vh] bg-fixed bg-center bg-cover homescreen-parallax">
-                <div className="h-full  flex flex-col justify-center items-center backdrop-brightness-75">
+                <div className="flex flex-col items-center justify-center h-full backdrop-brightness-75">
                     <div
                         className={
-                            "font-bold text-6xl w-5/6  text-center md:text-left md:text-[5rem] text-yellow-400 " +
+                            "font-bold text-6xl w-5/6  text-center md:text-center md:text-[5rem] text-yellow-400 " +
                             robotoSlab.className
                         }
                     >
                         MATH <br className="md:hidden" /> FOR THE{" "}
                         <br className="md:hidden" /> FUTURE
                     </div>
-                    <div className="font-bold text-2xl w-5/6 md:text-[24px] text-center md:text-left text-white">
+                    <div className="font-bold text-2xl w-5/6 md:text-[24px] text-center md:text-center text-white">
                         MENTORING AND VOLUNTEERING SERVICES FOR SOUTH BAY
                         STUDENTS
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-center mt-12 md:mt-0 gap-8">
+            <div className="flex flex-col items-center justify-center gap-8 mt-12 md:flex-row md:mt-0">
                 <Link
                     href="/tournament-information"
                     className="h-72 md:w-72 w-11/12 text-white flex flex-col justify-center items-center rounded-xl md:rounded-full relative md:-top-36 hover:scale-[1.02] transition-all drop-shadow bg-gradient-to-b from-yellow-400 to-yellow-600"

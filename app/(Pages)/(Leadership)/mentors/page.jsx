@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-
+export const metadata = {
+    title: "Mentors"
+}
 export default function Mentors() {
     const [mentorList, setMentorList] = useState([
         {
@@ -137,7 +139,7 @@ export default function Mentors() {
             {/*  */}
             {mentorList.map((mentor, i) => {
                 return (
-                    <div key={i} className="my-24 flex flex-col justify-center">
+                    <div key={i} className="flex flex-col justify-center my-24">
                         <div className="w-[1368px] mx-auto mt-8 text-[24px] font-bold text-teal-600 font-roboto-slab">
                             {mentor.name}
                         </div>

@@ -1,9 +1,6 @@
 import "../styles/globals.css";
-import Header from "../components/header";
-import Footer from "../components/footer";
-// import Font Awesome CSS
+
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
 import { Roboto } from "@next/font/google";
 import ClientWrapper from "@/components/ClientWrapper";
 
@@ -12,10 +9,20 @@ const roboto = Roboto({
     weight: ["100", "300", "400", "500", "700", "900"],
 });
 
+export const metadata = {
+    title: {
+        template:  "%s | South Bay Math Circle",
+        default:  "South Bay Math Circle",
+    },
+    icons: {
+        icon: "/sun.png"
+    }
+  };
+
+  
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <head />
             <body className={"text-black bg-white " + roboto.className}>
                 <ClientWrapper>{children}</ClientWrapper>
             </body>

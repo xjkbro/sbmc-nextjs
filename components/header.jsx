@@ -39,7 +39,7 @@ function Header({ overlay, setOverlay }) {
                         />
                         <span
                             className={
-                                "text-[2rem] font-black " + robotoSlab.className
+                                "text-[2vw] font-black " + robotoSlab.className
                             }
                         >
                             SOUTHBAYMATHCIRCLE
@@ -203,7 +203,7 @@ function Header({ overlay, setOverlay }) {
                 </div>
             </div>
             <div className="h-24 fixed w-full flex md:hidden justify-between items-center p-5 bg-white shadow-md z-[5]">
-                <div className="flex justify-center flex-col">
+                <div className="flex flex-col justify-center">
                     <Link className="flex" href="/">
                         <Image
                             src="/sun.png"
@@ -220,7 +220,7 @@ function Header({ overlay, setOverlay }) {
                         SBMC
                     </span>
                 </div>
-                {/* <FontAwesomeIcon icon={faBars} className="h-12 w-12" /> */}
+                {/* <FontAwesomeIcon icon={faBars} className="w-12 h-12" /> */}
                 <button
                     className="md:block"
                     onClick={() => setOverlay(!overlay)}

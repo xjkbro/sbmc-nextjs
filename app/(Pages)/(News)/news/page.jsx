@@ -1,11 +1,8 @@
 export const metadata = {
-    title: "News | South Bay Math Circle",
-    icons: {
-        icon: '/sun.png',
-    }
+    title: "News",
   };
 export default function News() {
   return (
-    <></>
+    <>News</>
   )
 }

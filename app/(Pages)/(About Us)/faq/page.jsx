@@ -1,14 +1,16 @@
 import Container from "@/components/Container";
 import SubpageTitle from "@/components/SubpageTitle";
 import Link from "next/link";
-
+export const metadata = {
+    title: "FAQs"
+}
 export default function FAQ() {
     return (
         <>
             <SubpageTitle title={"FAQs"} />
             {/*  */}
             <Container>
-                <div className="my-24 flex flex-col justify-center">
+                <div className="flex flex-col justify-center my-24">
                     {/*  */}
                     <div className=" mx-auto mt-8 text-[24px] font-bold text-teal-600 font-roboto-slab">
                         Q. What is South Bay Math Circle?
@@ -50,7 +52,7 @@ export default function FAQ() {
                     <p className="text-[20px] mt-4 text-justify  mx-auto">
                         Visit our sign up page{" "}
                         <Link
-                            className="underline text-teal-500"
+                            className="text-teal-500 underline"
                             href="/sign-up"
                         >
                             here
@@ -64,7 +66,7 @@ export default function FAQ() {
                     <p className="text-[20px] mt-4 text-justify  mx-auto">
                         Click{" "}
                         <Link
-                            className="underline text-teal-500"
+                            className="text-teal-500 underline"
                             href="/donation"
                         >
                             here
